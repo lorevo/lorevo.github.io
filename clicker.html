@@ -7,11 +7,12 @@
 
     <head>
         <script type="text/javascript">
-            var number = 0
+            var number = localStorage.getItem('number');
             function plusUn() {  // fonction pour ajouter un nombre au clicker
                 var count = document.getElementById('count');
                     number++;
                 count.innerHTML = number;
+               localStorage.setItem('number', number);
             }
         </script>
     </head>
