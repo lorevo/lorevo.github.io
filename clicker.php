@@ -1,6 +1,6 @@
 <?php
 include 'db.php';
-$pseudo=$_GET['pseudo'];
+$pseudo=$_POST['pseudo'];
 $sql = $conn->prepare("INSERT INTO emp (pseudo) VALUES (?, ?)");
 $sql->bind_param("is", $pseudo);
 $result = $sql->execute();
