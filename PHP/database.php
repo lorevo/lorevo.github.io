@@ -3,15 +3,15 @@
  $servername="localhost";
  $username="lorevo";
  $password="Baptiste2005";
- //connection to mysql
+ //se connecte à mysql
  $conn=mysqli_connect($servername,$username,$password);
  if(!$conn)
  {
 	 die("Connection Failed".mysql_error());
  }
  
- //Create database
- $sql="CREATE DATABASE clickerLeaderboard";//change name to change database
+ //Créé la base de données
+ $sql="CREATE DATABASE clickerLeaderboard";
  
  if( mysqli_query($conn,$sql) )
  {
