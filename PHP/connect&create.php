@@ -9,14 +9,14 @@ if(!$conn)
 }
 else
 	echo "Connection Successful<br>";
-//selecting database
+//selectionne la base de données
 $dbcheck=mysql_select_db("lname");
 if(!$dbcheck)
 {
 	echo "Error selecting DB".mysql_error();
 }
 else echo "Database Selected<br>";
-//Creating table
+//créé une table de données
 $sql="Create table student (sid int primary key, sname varchar(20))";
 $check=mysql_query($sql,$conn);
 if(!$check)
