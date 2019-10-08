@@ -8,10 +8,16 @@
     <head>
         <script type="text/javascript">
             var number = 0;
-            function plusUn() {    
+            function plusUn() {  // fonction pour ajouter un nombre au clicker
                 var count = document.getElementById('count');
-                number++;
+                if(number < 2000) {
+                    number++;
                 count.innerHTML = number;
+                } else if(number => 2000) { 
+                    number = 0;
+                    count = document.getElementById('count');
+                    number = number + 2;
+                    count.innerHTML = number;
             }
         </script>
     </head>
