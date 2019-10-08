@@ -1,6 +1,6 @@
 <?php
 include 'db.php';
-$pseudo=$_GET['pseudo'];
+$pseudo=$_POST['pseudo'];
 /* Using PDO (prepared statements) prevents SQL injection: */
 $sql = $conn->prepare("INSERT INTO emp (pseudo) VALUES (?, ?)");
 $sql->bind_param("is", $pseudo);
