@@ -2,7 +2,7 @@
 <?php 
  $servername="localhost";
  $username="lorevo";
- $password="";
+ $password="Baptiste2005";
  //connection to mysql
  $conn=mysqli_connect($servername,$username,$password);
  if(!$conn)
