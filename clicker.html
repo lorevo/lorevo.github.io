@@ -14,6 +14,9 @@
                 count.innerHTML = number;
                localStorage.setItem('number', number);
             }
+                function envoyer() {
+                    document.write("<p>C'est envoyé !</p>");
+            }
         </script>
     </head>
     <style>
@@ -56,7 +59,7 @@
            <p style="font-size: 40px">Tu veux faire parti du futur leaderboard ? Envoie ton pseudo ici :</p><br>
             <form action="clicker.php" method="post">
                 <input style="background-color: #25221E; color: white"type="text" placeholder="pseudo" name="pseudo">
-                <input type="submit" value="envoyer">
+                <input onclick="envoyer()" type="submit" value="envoyer">
             </form>
         </center>
       </body>
