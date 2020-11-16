@@ -1,12 +1,11 @@
 * {
-    background-color: white;
-    color: black;
-    background-image: url(background.png);
+    color: white;
+    background-image: background.png;
 }
 
 a {
-    color: black;
-    style: none;
+    color: white;
+    text-decoration: none;
 }
 
 nav {
