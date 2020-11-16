@@ -1,6 +1,5 @@
 * {
     color: white;
-    background-image: background.png;
 }
 
 a {
@@ -11,4 +10,8 @@ a {
 nav {
     display: inline-block;
     position: fixed;
+}
+
+body {
+    background-image: background.png;
 }
