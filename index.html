@@ -3,11 +3,30 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
   <style>
-a {
-    color: white;
-    text-decoration: none;
-    width: 25%; 
-    margin: 0px;
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+   }
+
+    li {
+      float: left;
+      width:25%;
+       }
+
+   a.Nav_Links:link, a.Nav_Links:visited {
+  display: block;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  }
+
+  a.Nav_Links:hover, a.Nav_Links:active {
+  background-color: #7A991A;
 }
     
 p {
@@ -55,12 +74,16 @@ body {
   </head>
 
   <body>
+    <div class="Nav_Bar">
+      <ul>  <!-- Fix links # -->
+        <li><a  class="Nav_Links" href="#home">About Me</a></li>
+        <li><a  class="Nav_Links" href="#news">LinkedIn</a></li>
+        <li><a  class="Nav_Links" href="#contact">Research</a></li>
+        <li><a  class="Nav_Links" href="#about">Pictures</a></li>
+      </ul>
+      <!-- About Me, Link to Linked in, Research Projects, Resume, etc Pictures   -->
 
-<div class="nav">
-  <a class="active" href="https://lorevo.github.io">Accueil</a>
-  <a href="https://lorevo.github.io/liste">liste</a>
-  <a href="https://lorevo.github.io/contact">Contact</a>
-</div>
+       </div>
 
 <div style="padding-left:16px">
   <h2>Top Navigation Example</h2>
