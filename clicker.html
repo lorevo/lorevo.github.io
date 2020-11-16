@@ -3,9 +3,6 @@
     <title>wsh c'est mon clicker</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no">
-    <html>
-
-    <head>
         <script type="text/javascript">
             var number = localStorage.getItem('number');
             function plusUn() {  // fonction pour ajouter un nombre au clicker
@@ -13,9 +10,6 @@
                     number++;
                 count.innerHTML = number;
                localStorage.setItem('number', number);
-            }
-                function envoyer() {
-                    document.write("<p>C'est envoyé !</p>");
             }
         </script>
     </head>
@@ -56,12 +50,5 @@
             <p>nombre de clicks : </p>
             <div id="count"></div>
             <img class="disable-dbl-tap-zoom" onclick="plusUn()" src="580b57fcd9996e24bc43c137.png"><br><br>
-           <!--<p style="font-size: 40px">Tu veux faire parti du futur leaderboard ? Envoie ton pseudo ici :</p><br>
-            <form action="clicker.php" method="post">
-                <input style="background-color: #25221E; color: white"type="text" placeholder="pseudo" name="pseudo">
-                <input type="submit" value="envoyer">
-            </form><br>
-            <p style="font-size: 40px">P.S. : Vous ne pouvez pas envoyer votre pseudo si vous utilisez un proxy</p>
-        </center>-->
       </body>
     </html>
