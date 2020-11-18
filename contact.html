@@ -49,7 +49,6 @@ body {
   display:inline;
 }
 
-/* Style the links inside the navigation bar */
 .nav a {
   float: left;
   color: #f2f2f2;
@@ -59,30 +58,65 @@ body {
   font-size: 17px;
 }
 
-/* Change the color of links on hover */
 .nav a:hover {
   background-color: #ddd;
   color: black;
 }
 
-/* Add a color to the active/current link */
 .nav a.active {
   background-color: #4CAF50;
   color: white;
 }
+    
+#background {
+  background-color: white;
+  border-radius: 20%;
+  margin: 5%;
+    }
+    
+#twitter {
+  display: inline-block;
+  color: #00ACEE;
+    }
+    
+#twitch {
+  display: inline-block;
+  color: #8653d6;
+    }
+    
+#mail {
+  display: inline-block;
+  color: #C7160;
+    }
+  
   </style>
   <title>Accueil</title>
   </head>
 
   <body>
     <div class="Nav_Bar">
-      <ul>  <!-- Fix links # -->
+      <ul>
         <li><a  class="Nav_Links" href="https://lorevo.github.io">Accueil</a></li>
         <li><a  class="Nav_Links" href="https://lorevo.github.io/liste">Gallerie</a></li>
         <li style="width:34%"><a  class="Nav_Links" href="https://lorevo.github.io/contact">Contact</a></li>
       </ul>
-      <!-- About Me, Link to Linked in, Research Projects, Resume, etc Pictures   -->
-
        </div>
+    
+    <h1>Me contacter :</h1>
+    <hr>
+    <span id="background">
+    <div id="twitter">
+      <a href="https://twitter.com/lorevo_"><img src="twitter.png"></a>
+      <p>Twitter : Mon réseau principal, merci de me contacter par message privé</p>
+    </div>
+    <div id="twitch">
+      <a href="https://twitch.tv/lorevo_"><img src="twitch.png"></a>
+      <p>Twitch : Je stream de temps en temps, vous pouvez me contacter par message privé ou dans le chat</p>
+    </div>
+    <div id="mail">
+      <a href="mailto:bfumeronlecomte@gmail.com"><img src="gmail.png"></a>
+      <p>Mail : La façon la plus classique de me contacter, je vous répondrai dès que possible</p>
+    </div>
+    </span>
   </body>
 </html>
